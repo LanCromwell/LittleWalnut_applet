@@ -1,0 +1,12 @@
+<!--components/vipDialog/vipDialog.wxml-->
+<view class="share-dialog-ly">
+  <view class="share-container">
+
+    <image class="bg_img" src="../../images/bg_vip_dialog.png"></image>
+
+    <view class="kefuBtn-ly">
+      <button open-type="contact" bindcontact="handleContact" class="kefuBtn" > </button>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "shareDialog": "/components/shareDialog/shareDialog",
+    "vipDialog": "/components/vipDialog/vipDialog"
+  },
+  "navigationBarTitleText": "小核桃",
+  "enablePullDownRefresh": true
+}

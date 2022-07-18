@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "shareDialog": "/components/shareDialog/shareDialog"
+  },
+  "navigationStyle": "custom"
+}

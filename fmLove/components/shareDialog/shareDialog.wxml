@@ -1,0 +1,15 @@
+<!--components/shareDialog/shareDialog.wxml-->
+<view class="share-dialog-ly" bindtap="cancelBtn">
+  <view class="share-container">
+    <view class="share-item bottom-line" bindtap="shreToFriend">
+      <button class="share-item bottom-line" open-type="share" bindtap="shreToFriend">提醒家人听</button>
+    </view>
+    <view class="share-item bottom-line"  bindtap="makeHaibao">
+      <text class="share-item bottom-line" bindtap="makeHaibao">生成海报给朋友</text>
+    </view>
+    <view class="share-item" bindtap="cancelBtn">
+      <text class="share-item" bindtap="cancelBtn">取消</text>
+    </view>
+  </view>
+  <image wx:if="{{isShowHand}}" class="gif-img-hand" src="../../images/hand_up.gif"></image>
+</view>

@@ -1,0 +1,6 @@
+<view class='container2' hidden='{{showEmpty}}'>
+    <view class="box" style="margin-top:{{offsetY}}">
+        <image class='icon' src='{{icon}}'></image>      
+        <text class='text'>{{text}}</text>
+    </view>
+</view>

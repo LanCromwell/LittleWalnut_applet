@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container" >
+  <view class="header">
+    <view class="calendar-ly">
+      <image class="calendar" src="../../images/icon_calenar.png"></image>
+      <text class="month">{{month}}</text>
+    </view>
+    <text class="day">{{day}}</text>
+    <view class="right-text">
+      <text class="week">{{week}}</text>
+      <text class="week">{{lurDay}}</text>
+    </view>
+  </view>
+
+  <swiper class="swiper" current="{{videoList.length-2}}" previous-margin="40rpx" next-margin="40rpx" style="height:{{swiperHeigh}}px;" bindchange="swiperChange">
+    <block wx:for="{{videoList}}" wx:key="index" wx:for-item="item">
+      <swiper-item wx:if="{{index == videoList.length-1}}">
+          <view class="swiper-item" style="height:{{swiperHeigh-30}}px;">
+            <image class="yugao-img" style="height:{{swiperHeigh-30}}px;" src="../../images/bg_yugao.png" mode="scaleToFill"/>
+            <view class="yugao-ly">
+              <!-- <text class="yugao-top-text1">{{day}}</text> -->
+              <text class="yugao-top-text2">距离明日更新还有</text>
+              <text class="yugao-top-text2">{{daojishi}}</text>
+              <view class="kefuBtn-ly">
+                <button open-type="contact" bindcontact="handleContact" class="kefuBtn" >回复“1”申请全家学服务</button>
+              </view>
+            </view>
+          </view>
+          <image wx:if="{{isShowHand}}" class="gif-img-hand" src="../../images/hand_up.gif"></image>
+      </swiper-item>
+      <swiper-item wx:else>
+          <view class="swiper-item" style="height:{{swiperHeigh-30}}px;">
+            <image class="item-top-img" src="{{item.img_path}}" style="height:{{swiperHeigh / 7 * 5}}px;" bindtap="clickRemind" lazy-load="true"></image>
+            <text class="title" bindtap="clickRemind">{{item.title}}</text>
+            <view class="bottom-ly">
+              <image class="setting-icon" src="../../images/icon_setting.png" bindtap="clickSetting"></image>
+              <!-- <image class="remind-icon" src="../../images/icon_remind.gif" bindtap="clickRemind"></image> -->
+              <image class="setting-icon" src="../../images/icon_share.png" bindtap="clickShare"></image>
+            </view>
+          </view>
+
+          <view class="playbtncontaner">
+            <image class="item-top-img-play-btn" src="../../images/btn_play.png" bindtap="clickRemind"></image>
+          </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<shareDialog wx:if="{{isShowShareDialog}}" class="share-dialog"></shareDialog>
+<vipDialog wx:if="{{isShowVipExpireDialog}}" class="share-dialog"></vipDialog>

@@ -1,0 +1,185 @@
+/**index.wxss**/
+Page {
+  background:white;
+  padding-bottom: constant(safe-area-inset-bottom);/* 兼容iPhone X 底部安全间距*/
+  padding-bottom: env(safe-area-inset-bottom);/* 兼容iPhone X 底部安全间距*/
+}
+/* 滚动条隐藏 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  width: 100%;
+  margin-left: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.calendar-ly{
+  height: 60rpx;
+  width: 60rpx;
+  position: relative;
+}
+.calendar{
+  height: 60rpx;
+  width: 60rpx;
+  position: absolute;
+}
+.month{
+  height: 26rpx;
+  width: 60rpx;
+  font-size:26rpx;
+  position: absolute;
+  font-family:PingFangSC-Semibold,PingFang SC;
+  font-weight:600;
+  color:rgba(255,154,69,1);
+  text-align: center;
+  margin-top: 20rpx;
+}
+.day{
+  font-size:60rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(33,33,33,1);
+  margin-left: 15rpx;
+}
+.right-text{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.week{
+  font-size:22rpx;
+  font-family:PingFang-SC-Regular,PingFang-SC;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  margin-left: 10rpx;
+  line-height: 22rpx;
+}
+.swiper{
+  background: white;
+}
+
+.swiper-item{
+  margin-bottom: 10rpx;
+  border-radius:30rpx;
+  margin: 14rpx;
+  box-shadow: 20rpx 10rpx 20rpx 6rpx rgba(168, 168, 168, 0.15), -20rpx 10rpx 20rpx 6rpx rgba(168, 168, 168,0.15) ;
+  background:rgba(246,247,247,1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.yugao-img{
+  width: 100%;
+  /* filter: blur(1rpx); */
+}
+.yugao-ly{
+  width: 100%;
+  position: fixed;
+  bottom: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.yugao-top-text1{
+  font-size:220rpx;
+  font-family:PingFang-SC-Heavy,PingFang-SC;
+  font-weight:800;
+  color:rgba(255,255,255,1);
+  line-height:308rpx;
+  align-self: center;
+}
+.yugao-top-text2{
+  font-size:30rpx;
+  font-family:PingFang-SC-Medium,PingFang-SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:r42px;
+}
+.item-top-img{
+  border-top-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+  width: 100%;
+}
+.title{
+  font-size:34rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(33,33,33,1);
+  line-height:48rpx;
+  margin-top: 42rpx;
+}
+.bottom-ly{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 50rpx;
+  margin-bottom: 16rpx;
+}
+.setting-icon{
+  width: 210rpx;
+  height: 90rpx;
+  margin-left: 23rpx;
+  margin-right: 23rpx;
+}
+.remind-icon{
+  width: 224rpx;
+  height: 92rpx;
+  margin-left: 23rpx;
+  margin-right: 23rpx;
+}
+
+.kefuBtn-ly{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 10rpx;
+}
+
+.kefuBtn{
+  width: 100%;
+  height: 80rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size:30rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:white;
+  background:linear-gradient(to right,#f87051,#fb5a46); /* 标准语法 */
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.playbtncontaner{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: center;
+}
+.item-top-img-play-btn{
+  left: 50%;
+  top: 30%;
+  height: 100px;
+  width: 100px;
+}
+.gif-img-hand{
+  position: fixed;
+  bottom: 180rpx;
+  height: 150rpx;
+  width: 150rpx;
+  left: 39%;
+  line-height: 96rpx;
+  text-align: center;
+  align-self: center;
+  transform: rotate(180deg);
+}

@@ -1,0 +1,134 @@
+/* pages/todayRemindPic/todayRemindPic.wxss */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.swiper{
+  width: 100%;
+  height: 766rpx;
+  margin-top: 126rpx;
+}
+.swiper-item{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.item{
+  width: 480rpx;
+  height: 726rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 50rpx auto;
+  box-shadow: 10rpx 10rpx 30rpx 4rpx rgba(168, 168, 168, 0.15), -10rpx -10rpx 30rpx 4rpx rgba(168, 168, 168,0.15) ;
+}
+.pic{
+  width: 480rpx; /**320*/
+  height: 726rpx;  /**410*/
+  align-self: center;
+}
+
+.dot-ly{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+
+.dot{
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #FF9A41;
+  border-radius: 50%;
+  margin-left: 26rpx;
+}
+.dot-unselect{
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  margin-left: 26rpx;
+  background-color: #999999;
+}
+
+.saveBtn{
+  width:80%;
+  height:88rpx;
+  background:linear-gradient(135deg,rgba(254,188,100,1) 0%,rgba(255,151,62,1) 100%);
+  box-shadow:0px 1px 11px 8px rgba(254,187,99,0.18);
+  border-radius:56rpx;
+  font-size:30rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  text-align: center;
+  line-height: 88rpx;
+  align-self: center;
+  position: fixed;
+  bottom: 66rpx;
+}
+
+.userauth{
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  background:rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.auth_content{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 35%;
+  margin:0rpx;
+  padding: 0rpx;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20rpx;
+  align-self: center;
+}
+.authtitle{
+  font-size:30rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(33,33,33,1);
+  text-align: center;
+  margin-top: 50rpx;
+}
+.content{
+  margin-top: 30rpx;
+}
+.authfooter{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  justify-content: center;
+  background: white;
+  border-top: #E8E8E8;
+  border-top-width: 2rpx;
+  border-top-style: solid;
+}
+.closeauth{
+  height: 80rpx;
+  background: white;
+}
+.okauth{
+  height: 80rpx;
+  background: white;
+  border-left: #E8E8E8;
+  border-left-width: 2rpx;
+  border-left-style: solid;
+  border-top-left-radius: 0rpx;
+  border-bottom-left-radius: 0rpx;
+}

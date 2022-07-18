@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/test/test",
+    "pages/setting/setting",
+    "pages/todayRemindPic/todayRemindPic",
+    "pages/login/login",
+    "pages/play/play",
+    "pages/guide/guide",
+    "pages/videoPlay/videoPlay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小核桃",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "backgroundColor": "#F5F5F6"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

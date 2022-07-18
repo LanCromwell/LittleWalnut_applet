@@ -1,0 +1,99 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.16.1",
+  "appid": "wxca06317bae73a683",
+  "projectname": "FmappForLove",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/setting/setting",
+          "pathName": "pages/setting/setting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/todayRemindPic/todayRemindPic",
+          "pathName": "pages/todayRemindPic/todayRemindPic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/play/play",
+          "pathName": "pages/play/play",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/guide/guide",
+          "pathName": "pages/guide/guide",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

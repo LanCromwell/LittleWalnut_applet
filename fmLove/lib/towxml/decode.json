@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "decode": "/lib/towxml/decode",
+    "table": "/lib/towxml/table/table",
+    "img": "/lib/towxml/img/img"
+  }
+}

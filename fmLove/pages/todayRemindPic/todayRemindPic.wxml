@@ -1,0 +1,37 @@
+<!--pages/todayRemindPic/todayRemindPic.wxml-->
+<view class="container">
+  <swiper class="swiper" bindchange="onSwipeChange">
+    <block wx:for="{{picList}}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <view class="item">
+          <image class="pic" src="{{item.path}}" mode="scaleToFill"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="dot-ly">
+    <block wx:for="{{picList}}" wx:key="*this">
+      <view class="{{curIndex == index ? 'dot' : 'dot-unselect'}}"></view>
+    </block>
+  </view>
+
+  <view class="saveBtn" bindtap="saveBtn">保存</view>
+</view>
+
+<view class="userauth" wx:if="{{!userauth}}">
+    <view class="auth_content">
+      <view class="authtitle">
+        提示
+      </view>
+      <view class="authtitle content">
+        允许保存图片或视频到你的相册？
+      </view>
+      <view class="authfooter">
+        <button class="closeauth" bindtap="closeauth">取消</button>
+        <button class="okauth" hover-class="none" open-type='openSetting' bindopensetting="getseetting">
+          确定
+        </button>
+      </view>
+    </view>
+  </view>

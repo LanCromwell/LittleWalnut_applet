@@ -1,0 +1,192 @@
+.integral-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.integral-share, .integral-strong, .integral-weak {
+  position: fixed;
+  z-index: 999;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  border-radius: 20rpx;
+  overflow: hidden;
+  padding: 10rpx;
+}
+
+/**解锁荣誉称号 */
+.glory-bg {
+  width: 418rpx;
+  height: 370rpx;
+  position: absolute;
+  bottom: 0;
+  left: 61rpx;
+}
+.glory-icon {
+  width: 236rpx;
+  height: 240rpx;
+  position: absolute;
+  left: 152rpx;
+  bottom: 32rpx;
+}
+
+/**赚积分：分享弹框 */
+.integral-close {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 36rpx;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.integral-close image{
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.integral-share .integral-body {
+  width: 540rpx;
+  height: 548rpx;
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, #52AAFC 0%, #4B9BF8 20%, #418BF4 40%, #367CF0 60%, #266DEC 80%, #035EE8 100%);
+  position: relative;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.integral-share .integral-title1 {
+  font-family: PingFangSC-Semibold;
+  font-size: 50rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 88rpx;
+}
+
+.integral-share .integral-title2 {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.integral-share .integral-icon {
+  width: 418rpx;
+  height: 370rpx;
+  position: absolute;
+  left: 61rpx;
+  bottom: 0;
+}
+
+.integral-share .btn-share {
+  height: 104rpx;
+  line-height: 104rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #2B2B2B;
+  background: #fff;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+button:not([size='mini']) {
+  min-height: 104rpx;
+  width: 100%;
+}
+
+button {
+  padding: 0rpx !important;
+  font-weight: 500 !important;
+  width: 100% !important;
+  min-height: 104rpx !important;
+}
+
+/**赚积分：强提示框 */
+.integral-strong .integral-body {
+  width: 540rpx;
+  height: 518rpx;
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, #52AAFC 0%, #4B9BF8 20%, #418BF4 40%, #367CF0 60%, #266DEC 80%, #035EE8 100%);
+  position: relative;
+  border-radius: 20rpx;
+}
+
+.integral-strong .integral-icon {
+  width: 388rpx;
+  height: 168rpx;
+  margin: 82rpx 76rpx 0 76rpx;
+}
+
+.integral-strong .integral-title1 {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+.integral-strong .integral-title2 {
+  font-family: PingFangSC-Semibold;
+  font-size: 56rpx;
+  color: #FFCD30;
+  letter-spacing: 4rpx;
+  text-align: center;
+  margin-top: 62rpx;
+}
+
+/**赚积分：弱提示框 */
+.integral-weak .integral-body {
+  width: 306rpx;
+  /* height: 306rpx; */
+  text-align: center;
+  opacity: 0.9;
+  background: rgba(255,255,255,0.90);
+  border-radius: 10px;
+  padding-top: 70rpx;
+  padding-bottom: 70rpx;
+}
+
+.integral-weak .integral-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.integral-weak .integral-icon {
+  width: 68rpx;
+  height: 86rpx;
+}
+
+.integral-weak .integral-title1 {
+  font-family: PingFangSC-Semibold;
+  font-size: 68rpx;
+  color: #000000;
+  letter-spacing: 4.86rpx;
+  text-align: center;
+}
+
+.integral-weak .integral-title2 {
+  font-family: PingFangSC-Regular;
+  font-size: 34rpx;
+  color: #7A7A7A;
+  text-align: center;
+  margin-top: 36rpx;
+}

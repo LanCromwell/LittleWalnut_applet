@@ -1,0 +1,37 @@
+<!--pages/play/play.wxml-->
+<view class="container">
+  <image class="bg-img" src="{{img_path}}"></image>
+  <view class="bady">
+    <view class="title-ly" style="margin-top:{{statusBarHeight}}px">
+      <view bindtap="closeBtn" class="close-btn-ly">
+        <image class="close-btn" src="../../images/icon_close.png" />
+      </view>
+      <text class="title">0-6家庭养育标准</text>
+      <text class="title-right-place">今日提醒</text>
+    </view>
+
+  <view class="centerly">
+    <image class="gif-img" src="../../images/bg_play.gif"></image>
+    <view class="circle-center-ly" hidden="true">
+      <image class="shuye" src="../../images/icon_shuye.png"></image>
+      <text class="shuye-text">正在提醒…</text>
+    </view>
+    <text class="video-title">{{videoTitle}}</text>
+  </view>
+  </view>
+  <view class="operatorLy">
+      <view class="priseLy" bindtap="clickDabiao">
+        <image class="priceIcon" src="{{isDabiao ? '../../images/prise.png' : '../../images/unprise.png'}}"/>
+        <text class="iconText">达标</text>
+      </view>
+      <view class="priseLy" bindtap="clickWeidabiao">
+        <image class="priceIcon" src="{{isWeidabiao ? '../../images/undabiaoyellow.png' : '../../images/undabiaogray.png'}}"/>
+        <text class="iconText">未达标</text>
+      </view>
+      <!-- <view  class="priseLy" bindtap="clickShare">
+        <image class="priceIcon" src="../../images/share.png"/>
+        <text class="iconText">分享</text>
+      </view> -->
+    </view>
+</view>
+<shareDialog wx:if="{{isShowShareDialog}}" class="share-dialog"></shareDialog>

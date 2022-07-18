@@ -1,0 +1,10 @@
+<!--pages/login/login.wxml-->
+<view  class="container">
+  <!-- https://mamaucan.oss-cn-beijing.aliyuncs.com/xiaochengxu_login_bj.png -->
+  <image class="bgImg" src="https://mamaucan.oss-cn-beijing.aliyuncs.com/img_info/hduiahduihad389dhashdhadh89shd.jpeg" mode="widthFix"/>
+  <button wx:if="{{canIUseGetUserProfile}}" class="login-weixin" bindtap="getUserProfile">微信快捷登录</button>
+  <button wx:else class="login-weixin" bindtap="clickWxLogin" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信快捷登录</button>
+  <image wx:if="{{isShowHand}}" class="gif-img" src="../../images/hand_up.gif"></image>
+  
+</view>
+

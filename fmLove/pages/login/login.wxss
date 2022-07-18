@@ -1,0 +1,39 @@
+/* pages/login/login.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+}
+.bgImg{
+  width: 100%;
+  height: 100%;
+}
+.login-weixin{
+  position: fixed;
+  bottom: 50rpx;
+  height: 96rpx;
+  width: 80%;
+  color: white;
+  font-size: 40rpx;
+  background: #00b623;
+  border-radius: 50rpx;
+  line-height: 96rpx;
+  text-align: center;
+  align-self: center;
+}
+
+button {
+  padding: 0rpx !important;
+  font-weight: 500 !important;
+  width: 80% !important;
+}
+
+.gif-img{
+  position: fixed;
+  bottom: 150rpx;
+  height: 150rpx;
+  width: 150rpx;
+  line-height: 96rpx;
+  text-align: center;
+  align-self: center;
+  transform: rotate(180deg);
+}

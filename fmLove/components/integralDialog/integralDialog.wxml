@@ -1,0 +1,45 @@
+<view class="integral-dialog" hidden="{{hide}}">
+    <view class="integral-mask" bindtap="onDismiss"></view>
+    <view wx:if="{{model=='share'}}" class="integral-share">
+        <view class="integral-close">
+            <image bindtap="onDismiss" src="../../../images/btn_close.png" />
+        </view>
+        <view class="integral-body">
+            <view class="integral-title1">恭喜你学完本课程</view>
+            <view class="integral-title2">首次分享给同伴可获得10积分</view>
+            <image class="integral-icon" src="../../../images/integral-share.png"/>
+        </view>
+        <button class='btn-share' open-type="share" data-origin="shareCourse">分享</button>
+    </view>
+    <view wx:elif="{{model=='glory'}}" class="integral-share">
+        <view class="integral-close">
+            <image bindtap="onDismiss" src="../../../images/btn_close.png" />
+        </view>
+        <view class="integral-body">
+            <view class="integral-title1">恭喜你解锁该称号</view>
+            <view class="integral-title2">{{gloryName}}</view>
+            <image class="glory-bg" src="../../../images/unlock-glory-bg.png" />
+            <image class="glory-icon" src="{{gloryImage}}"/>
+        </view>
+        <button class='btn-share' open-type="share" data-origin="shareGlory">分享</button>
+    </view>
+    <view wx:elif="{{model=='strong'}}" class="integral-strong">
+        <view class="integral-close">
+            <image bindtap="onDismiss" src="../../../images/btn_close.png" />
+        </view>
+        <view class="integral-body">
+            <image class="integral-icon" src="../../../images/integral-strong.png"/>
+            <view class="integral-title1">太棒了！本关卡已学完</view>
+            <view class="integral-title2">+5积分</view>
+        </view>
+    </view>
+    <view wx:elif="{{model=='weak'}}" class="integral-weak">
+        <view class="integral-body">
+            <view class="integral-up">
+                <image class="integral-icon" src="../../../images/integral-weak.png" />
+                <text class="integral-title1">{{login?'+2':'+5'}}</text>
+            </view>
+            <view class="integral-title2" hidden="{{!login}}">每日登录积分</view>
+        </view>
+    </view>
+</view>

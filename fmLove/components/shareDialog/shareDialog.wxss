@@ -1,0 +1,57 @@
+/* components/shareDialog/shareDialog.wxss */
+.share-dialog-ly{
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  background:rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.share-container{
+  width: 680rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35rpx;
+  position: fixed;
+  bottom: 0rpx;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.share-item{
+  height:104rpx;
+  font-size:40rpx;
+  width: 680rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(33,33,33,1);
+  line-height:104rpx;
+  text-align: center;
+  background-color: white;
+}
+
+.bottom-line{
+  border-bottom: #E8E8E8;
+  border-bottom-width: 2rpx;
+  border-bottom-style: solid;
+}
+
+button {
+  padding: 0rpx !important;
+  font-weight: 500 !important;
+  width: 404rpx !important;
+}
+
+.gif-img-hand{
+  position: fixed;
+  bottom: 350rpx;
+  height: 150rpx;
+  width: 150rpx;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  transform: rotate(180deg);
+}

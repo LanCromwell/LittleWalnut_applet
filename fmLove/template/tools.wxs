@@ -1,0 +1,94 @@
+/**
+ * 格式化时间 2020/02/14 18:13:24
+ * @param {时间戳-Date.now()} date 
+ */
+function formatTime(date) {
+  const year = date.getFullYear()
+  const month = date.getMonth() + 1
+  const day = date.getDate()
+  const hour = date.getHours()
+  const minute = date.getMinutes()
+  const second = date.getSeconds()
+
+  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+}
+function formatNumber(n) {
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
+
+/**
+ * 保留小数位数
+ * @param {number|string} num 
+ * @param {小数位} decimal 
+ * @param {是否四舍五入} round 
+ */
+function keepDecimal(num, decimal, isRound) {
+	decimal = typeof decimal == 'number' ? decimal : 2
+  var result = num
+  if(isRound == true) { //四舍五入
+    result = parseFloat(num).toFixed(decimal)
+  } else { //不四舍五入
+    var n = num.toString()
+    var p = n.indexOf('.')
+      if(p > -1 && decimal > 0) {
+        var a = n.substring(0, p)
+        var b = n.substring(p+1, n.length)
+        if(decimal > b.length) {
+          for(var i=decimal-b.length; i>0; i--) {
+              b += '0'
+          }	
+        }else {
+          b = b.substring(0, decimal)
+        }
+        result = a+'.'+b
+      } else {
+        result = decimal > 0 ? n+'.' : n
+        for(var i=decimal; i>0; i--){
+          result += '0'
+        }
+      }
+  }
+return result
+}
+
+/**
+ * 数值单位格式化 '', 千', '万', '亿'
+ * @param {数值} num 
+ * @param {是否返回拼接好的字符串例如：1.5万} isJoin 
+ */
+function formatUnit(num, isJoin) {
+  var units = ['', '万', '亿']
+  var currNum = num
+  var m = {num:0, unit:''}
+  if (numSize(currNum) < 5) {
+    m.num = keepDecimal(currNum, 0)
+    return isJoin ? m.num+m.unit : m
+  } else if (numSize(currNum) < 9) { // 万
+    m.num = keepDecimal(currNum / 10000, 1)
+    m.unit = units[1]
+    return isJoin ? m.num+m.unit : m
+  } else if (numSize(currNum) < 10) { //亿
+    m.num = keepDecimal(currNum / 100000000, 1)
+    m.unit = units[2]
+    return isJoin ? m.num+m.unit : m
+  } else {
+	  m.num = num
+	  return isJoin ? m.num+m.unit : m
+  }
+}
+
+function numSize(n) {
+  var s = n.toString()
+  var idx = s.indexOf(".")
+  if (idx > -1) {
+    s = s.substring(0, idx)
+  }
+  return s.length
+}
+
+module.exports = {
+  formatTime: formatTime,
+  keepDecimal: keepDecimal,
+  formatUnit: formatUnit
+}

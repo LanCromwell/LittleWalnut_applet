@@ -1,0 +1,110 @@
+/* pages/setting/setting.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.date-ly{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50rpx;
+}
+.title{
+  font-size:36rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:700;
+  color:rgba(49,49,49,1);
+  line-height:50rpx;
+  align-self: center;
+}
+.date-picker{
+  width: 100%;
+  height: 400rpx;
+  margin-top: 16rpx;
+}
+.year-view{
+  line-height: 50px;
+  text-align: center;
+}
+.months-view{
+  line-height: 50px; 
+  text-align: center;
+}
+.day-view{
+  line-height: 50px;
+  text-align: center;
+}
+
+.bottom-ly{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.role-ly{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80rpx;
+}
+.role-picker{
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 16rpx;
+}
+.lua-ly{
+  margin-left: 20rpx;
+  
+}
+/* background:linear-gradient(135deg,rgba(254,188,100,1) 0%,rgba(255,151,62,1) 100%);
+box-shadow:0px 1px 11px 8px rgba(254,187,99,0.18); */
+.saveBtn{
+  width:80%;
+  height:88rpx;
+  background: #00b623;
+  border-radius:56rpx;
+  font-size:40rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  text-align: center;
+  line-height: 88rpx;
+  align-self: center;
+  position: fixed;
+  bottom: 24rpx;
+}
+
+.gif-img-hand1{
+  position: fixed;
+  top: 280rpx;
+  left: 16%;
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.gif-img-hand2{
+  position: fixed;
+  top: 790rpx;
+  left: 16%;
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.gif-img-hand3{
+  position: fixed;
+  top: 790rpx;
+  left: 65%;
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.gif-img-hand4{
+  position: fixed;
+  bottom: 120rpx;
+  height: 150rpx;
+  width: 150rpx;
+  line-height: 96rpx;
+  text-align: center;
+  align-self: center;
+  transform: rotate(180deg);
+}

@@ -1,0 +1,42 @@
+<!--pages/setting/setting.wxml-->
+<view class="container">
+  <view class="date-ly">
+    <text class="title">孩子的预产期/出生日期是</text>
+    <picker-view class="date-picker" indicator-style="height:50px;" value="{{dateValue}}" bindchange="bindDatePickerChange">
+      <picker-view-column>
+        <view class="year-view" wx:for="{{years}}" wx:key="index" >{{item + (item == "请选择" ? "" : "年")}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view class="months-view" wx:for="{{months}}" wx:key="index">{{item  + (item == "请选择" ? "" : "月")}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view class="day-view" wx:for="{{days}}" wx:key="index" >{{item+(item == "请选择" ? "" : "日")}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+
+  <view class="bottom-ly">
+    <view class="role-ly">
+        <text class="title">你是？</text>
+        <picker-view class="role-picker" indicator-style="height:50px;" value="{{roleValue}}" bindchange="bindRolePickerChange">
+          <picker-view-column>
+            <view class="months-view" wx:for="{{roles}}" wx:key="index">{{item.name}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+
+      <view class="role-ly lua-ly">
+        <text class="title">民族方言选择</text>
+        <picker-view class="role-picker" indicator-style="height:50px;" value="{{languageValue}}" bindchange="bindLuaPickerChange">
+          <picker-view-column>
+            <view class="months-view" wx:for="{{luas}}" wx:key="index">{{item.name}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+  </view>
+  <view class="saveBtn" bindtap="clickComplete">定制完成</view>
+  <image wx:if="{{isShowHand1}}" class="gif-img-hand1" src="../../images/hand_up.gif"></image>
+  <image wx:if="{{isShowHand2}}" class="gif-img-hand2" src="../../images/hand_up.gif"></image>
+  <image wx:if="{{isShowHand3}}" class="gif-img-hand3" src="../../images/hand_up.gif"></image>
+  <image wx:if="{{isShowHand4}}" class="gif-img-hand4" src="../../images/hand_up.gif"></image>
+</view>

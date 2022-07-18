@@ -1,0 +1,20 @@
+@import './template/base.wxss';
+/* 单行，显示不全用...代替 */
+.single-line{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 多行，最后一行显示不全用...代替 */
+.multi-line {
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}

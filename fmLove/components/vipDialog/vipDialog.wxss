@@ -1,0 +1,55 @@
+/* components/vipDialog/vipDialog.wxss */
+.share-dialog-ly{
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  background:rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-container{
+  width: 500rpx;
+  background: white;
+  border-radius: 20rpx;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.bg_img{
+  width: 500rpx;
+  height: 650rpx;
+}
+
+.kefuBtn-ly{
+  width: 100%;
+  height: 300rpx;
+  position: fixed;
+  top: 730rpx;
+  align-self: center;
+}
+.kefuBtn{
+  width: 100%;
+  height: 300rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: transparent;
+  font-size:34rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(33,33,33,1);
+}
+
+button {
+  padding: 0rpx !important;
+  font-weight: 500 !important;
+}
